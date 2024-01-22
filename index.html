@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+        Popover on bottom
+      </button>
+      
+    <h1>BS tööd</h1>
+<ul>
+    <li><a href="">harjutus 1</a></li>
+    <li><a href="">harjutus 2</a></li>
+    <li><a href="">harjutus 3</a></li>
+    <li><a href="">harjutus 4</a></li>
+    <li><a href="">harjutus 5</a></li>
+    <li><a href="">harjutus 6</a></li>
+    <li><a href="">harjutus 7</a></li>
+    <li><a href="">harjutus 8</a></li>
+    <li><a href="">harjutus 9</a></li>
+</ul>
+
+<script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+</body>
+</html>
